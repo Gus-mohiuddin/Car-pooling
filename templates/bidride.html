@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bid Ride Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Raise a Bid for the Ride</h1><br/>
+        <form action="/bids" method="POST">
+            <div class="form-group">
+                <label for="passenger-name">Passenger Name</label>
+                <input type="text" class="form-control" id="passenger-name" name="passenger-name" required>
+            </div>
+            <div class="form-group">
+                <label for="bid-amount">Bid Amount</label>
+                <input type="number" class="form-control" id="bid-amount" name="bid-amount" required>
+            </div>
+            <input type="hidden" id="ride-id" name="ride-id" value="{ride_id}">
+            <!-- Replace {ride_id} with the actual ride ID obtained from the backend -->
+            <button type="submit" class="btn btn-primary">Raise Bid</button>
+        </form>
+    </div>
+</body>
+</html>

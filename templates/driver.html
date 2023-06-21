@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driver Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a Ride</h1><br/>
+        <form action="/rides" method="POST">
+            <div class="form-group">
+                <label for="source">Source</label>
+                <input type="text" class="form-control" id="source" name="source" required>
+            </div><br/>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" name="destination" required>
+            </div><br/>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" name="date" required>
+            </div><br/>
+            <div class="form-group">
+                <label for="seats">Available Seats</label>
+                <input type="number" class="form-control" id="seats" name="seats" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Ride</button>
+        </form>
+    </div>
+</body>
+</html>
